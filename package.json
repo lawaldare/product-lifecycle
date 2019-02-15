@@ -1,0 +1,22 @@
+{
+  "name": "product-lifecycle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lawaldare/product-lifecycle.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lawaldare/product-lifecycle/issues"
+  },
+  "homepage": "https://github.com/lawaldare/product-lifecycle#readme",
+  "dependencies": {
+    "jest": "^24.1.0"
+  }
+}
