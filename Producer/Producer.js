@@ -7,7 +7,7 @@ class Producer {
 		this.mainProduct = mainProduct;
 		const statement = `${this.mainProduct} has been given to Retailer\n`;
 		this.go =  async function() {
-			await fs.appendFileSync('../Database/output.txt', statement);
+			await fs.appendFileSync('output.txt', statement);
 			console.log(statement);
 			if(stopper == null) this.state.change(new file.Retailer(this.state, this.mainProduct));
 		};

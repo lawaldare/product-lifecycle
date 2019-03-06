@@ -6,7 +6,7 @@ class Retailer {
 		this.mainProduct = mainProduct;
 		this.go =  async function() {
 			const statement = `${this.mainProduct} has been given to Consumer\n`;
-			await fs.appendFileSync('../Database/output.txt', statement);
+			await fs.appendFileSync('output.txt', statement);
 			console.log(statement);
 			this.state.change(new file.Consumer(this.state, this.mainProduct));
 		};

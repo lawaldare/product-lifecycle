@@ -6,7 +6,7 @@ class Consumer {
 		this.mainProduct = mainProduct;
 		const statement = `${this.mainProduct} has been given to Recycler\n`;
 		this.go =  async function() {
-			await fs.appendFileSync('../Database/output.txt', statement);
+			await fs.appendFileSync('output.txt', statement);
 			console.log(statement);
 			this.state.change(new file.Recycler(this.state, this.mainProduct));
 		};

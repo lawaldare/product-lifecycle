@@ -16,7 +16,7 @@ for (let i = 0; i < data.length; i++) {
  function getStarted(dataArray) {
 	for (let i = 0; i < dataArray.length; i++) {
 		dataArray[i][2] ? dataArray[i][2] : (dataArray[i][2] = 'Producer');
-		file.started([`${++id} ${dataArray[i][0]}`], dataArray[i][2], './Database/output.txt');
+		file.started([`${++id} ${dataArray[i][0]}`], dataArray[i][2], 'output.txt');
 	}
 	stopper == true;
 }	
