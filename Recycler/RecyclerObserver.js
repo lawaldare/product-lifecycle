@@ -7,6 +7,6 @@ class RecyclerObserver {
 	}
 }
 
-const file = require('../files');
+const file = require('../Handlers/files');
 
 module.exports = RecyclerObserver;

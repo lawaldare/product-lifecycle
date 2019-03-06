@@ -1,4 +1,4 @@
-const file = require('./files');
+const file = require('../Handlers/files');
 const mo = new file.Model();
 
 const producerObserver1 = new file.ProducerObserver();

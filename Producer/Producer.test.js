@@ -1,10 +1,12 @@
 
-const Producer = require('./Producer');
+//const Producer = require('./Producer');
+const files = require('../files');
 
-
-const producer1 = new Producer('producer', 'Fanta');
+const producer1 = new files.Producer('producer', 'Fanta');
 
 
 test('creating an instance of a Producer', () => {
-  expect(producer1).toBeInstanceOf(Producer);
+  expect(producer1).toBeInstanceOf(files.Producer);
 })
+
+//console.log(files.Producer);
