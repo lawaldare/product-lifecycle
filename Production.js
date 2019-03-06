@@ -2,9 +2,9 @@ const Producer = require('./Producer/Producer');
 var Production = function() {
 	this.currentState = new Producer(this);
 
-	this.change = function(state) {
+	this.change = async function(state) {
 		this.currentState = state;
-		this.currentState.go();
+		await this.currentState.go();
 	};
 
 	this.start = function() {
