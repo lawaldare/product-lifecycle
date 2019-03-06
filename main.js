@@ -12,9 +12,9 @@ for (let i = 0; i < data.length; i++) {
 	dataArray.push(data[i].split(' '));
 }
  function getStarted(dataArray) {
-	for (let product of dataArray) {
-		product[2] ? product[2] : (product[2] = 'Producer');
-		file.started([`${++id} ${product[0]}`], product[2], './output.txt');
+	for (let i = 0; i < dataArray.length; i++) {
+		dataArray[i][2] ? dataArray[i][2] : (dataArray[i][2] = 'Producer');
+		file.started([`${++id} ${dataArray[i][0]}`], dataArray[i][2], './output.txt');
 	}
 }	
 	
@@ -22,9 +22,3 @@ for (let i = 0; i < data.length; i++) {
 
 
 getStarted(dataArray);
-
-// for (var line of dataArray) {
-// 		fs.appendFile('output', line + '\n', function(err) {
-// 			if (err) throw new error();
-// 		});
-// 	}
