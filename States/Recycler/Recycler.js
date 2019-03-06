@@ -13,6 +13,6 @@ class Recycler {
 	}
 }
 
-const file = require('../Handlers/files');
+const file = require('../../Handlers/files');
 
 module.exports = Recycler;

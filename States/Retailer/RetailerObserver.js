@@ -7,6 +7,6 @@ class RetailerObserver {
 	}
 }
 
-const file = require('../Handlers/files');
+const file = require('../../Handlers/files');
 
 module.exports = RetailerObserver;

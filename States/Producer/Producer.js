@@ -1,5 +1,5 @@
 const fs = require('fs');
-const stopper = require('../Handlers/check');
+const stopper = require('../../Handlers/check');
 
 class Producer {
 	constructor(state, mainProduct, link) {
@@ -14,6 +14,6 @@ class Producer {
 	}
 }
 
-const file = require('../Handlers/files');
+const file = require('../../Handlers/files');
 
 module.exports = Producer;
