@@ -1,13 +1,14 @@
-var Recycler = function (product) {
-  this.product = product;
+class Recycler {
+	constructor(product, mainProduct) {
+		this.product = product;
+		this.mainProduct = mainProduct;
+		this.go = async function() {
+			await console.log(`${this.mainProduct} has been given to Retailer`);
+			this.product.change(new file.Producer(this.product, this.mainProduct));
+		};
+	}
+}
 
-  this.go = function () {
-      log.add("Recycler has recycled the product for the Producer");
-      product.change(new Producer(product));
-  }
-};
+const file = require('../files');
 
-
-
-
-module.export = Recycler;
+module.exports = Recycler;

@@ -1,13 +1,14 @@
-var Retailer = function (product) {
-  this.product = product;
+class Retailer {
+	constructor(product, mainProduct) {
+		this.product = product;
+		this.mainProduct = mainProduct;
+		this.go = async function() {
+			await console.log(`${this.mainProduct} has been given to Consumer`);
+			this.product.change(new file.Consumer(this.product, this.mainProduct));
+		};
+	}
+}
 
-  this.go = function () {
-      log.add("Retailer has given the Consumer the product");
-      product.change(new Consumer(product));
-  }
-};
-
-
-
+const file = require('../files');
 
 module.exports = Retailer;
