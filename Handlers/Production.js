@@ -1,4 +1,4 @@
-const Producer = require('./Producer/Producer');
+const Producer = require('../Producer/Producer');
 var Production = function() {
 	this.currentState = new Producer(this);
 

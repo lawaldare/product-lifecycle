@@ -7,6 +7,6 @@ class ProducerObserver {
 	}
 }
 
-const file = require('../files');
+const file = require('../Handlers/files');
 
 module.exports = ProducerObserver;

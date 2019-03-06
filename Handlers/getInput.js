@@ -1,7 +1,7 @@
 const fs = require('fs');
 var data;
 
-fs.readFile('product', 'utf8', function(err, contents) {
+fs.readFile('../Database/product', 'utf8', function(err, contents) {
 	data = contents.toString();
 	data = data.replace(/\t/gi, ' ');
 	data = data.replace(/[^\w \n]/gi, '');
@@ -10,7 +10,7 @@ fs.readFile('product', 'utf8', function(err, contents) {
 	data = data.trim().split('\n');
 	//console.log(data);
 	for (var a of data) {
-		fs.appendFile('database', a + '\n', function(err) {
+		fs.appendFile('../Database/database', a + '\n', function(err) {
 			if (err) throw new error();
 		});
 	}
