@@ -1,14 +1,14 @@
 const fs = require('fs');
 
 class Recycler {
-	constructor(product, mainProduct, link) {
-		this.product = product;
+	constructor(state, mainProduct, link) {
+		this.state = state;
 		this.mainProduct = mainProduct;
 		const statement = `${this.mainProduct} has been given to Producer\n`
 		this.go = async  function() {
 			await fs.appendFileSync('./output.txt', statement);
 			console.log(statement);
-			this.product.change(new file.Producer(this.product, this.mainProduct));
+			this.state.change(new file.Producer(this.state, this.mainProduct));
 		};
 	}
 }

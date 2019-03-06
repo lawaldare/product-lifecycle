@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1551856227508" clover="3.2.0">
-  <project timestamp="1551856227509" name="All files">
-    <metrics statements="89" coveredstatements="64" conditionals="4" coveredconditionals="2" methods="24" coveredmethods="9" elements="117" coveredelements="75" complexity="0" loc="89" ncloc="89" packages="5" files="12" classes="12"/>
+<coverage generated="1551868467035" clover="3.2.0">
+  <project timestamp="1551868467035" name="All files">
+    <metrics statements="101" coveredstatements="70" conditionals="4" coveredconditionals="2" methods="24" coveredmethods="9" elements="129" coveredelements="81" complexity="0" loc="101" ncloc="101" packages="5" files="12" classes="12"/>
     <package name="product-lifecycle">
       <metrics statements="41" coveredstatements="34" conditionals="4" coveredconditionals="2" methods="8" coveredmethods="3"/>
       <file name="Production.js" path="/Users/lawaldare/Documents/Decagon files/product-lifecycle/Production.js">
@@ -59,16 +59,19 @@
       </file>
     </package>
     <package name="product-lifecycle.Consumer">
-      <metrics statements="12" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
+      <metrics statements="15" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
       <file name="Consumer.js" path="/Users/lawaldare/Documents/Decagon files/product-lifecycle/Consumer/Consumer.js">
-        <metrics statements="7" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
+        <metrics statements="10" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
       </file>
       <file name="ConsumerObserver.js" path="/Users/lawaldare/Documents/Decagon files/product-lifecycle/Consumer/ConsumerObserver.js">
         <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
@@ -80,16 +83,19 @@
       </file>
     </package>
     <package name="product-lifecycle.Producer">
-      <metrics statements="12" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
+      <metrics statements="15" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
       <file name="Producer.js" path="/Users/lawaldare/Documents/Decagon files/product-lifecycle/Producer/Producer.js">
-        <metrics statements="7" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="3" count="4" type="stmt"/>
-        <line num="4" count="4" type="stmt"/>
+        <metrics statements="10" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
         <line num="5" count="4" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
       </file>
       <file name="ProducerObserver.js" path="/Users/lawaldare/Documents/Decagon files/product-lifecycle/Producer/ProducerObserver.js">
         <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
@@ -101,16 +107,19 @@
       </file>
     </package>
     <package name="product-lifecycle.Recycler">
-      <metrics statements="12" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="1"/>
+      <metrics statements="15" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="1"/>
       <file name="Recycler.js" path="/Users/lawaldare/Documents/Decagon files/product-lifecycle/Recycler/Recycler.js">
-        <metrics statements="7" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
-        <line num="3" count="0" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
+        <metrics statements="10" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
         <line num="5" count="0" type="stmt"/>
         <line num="6" count="0" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
       </file>
       <file name="RecyclerObserver.js" path="/Users/lawaldare/Documents/Decagon files/product-lifecycle/Recycler/RecyclerObserver.js">
         <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
@@ -122,16 +131,19 @@
       </file>
     </package>
     <package name="product-lifecycle.Retailer">
-      <metrics statements="12" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="1"/>
+      <metrics statements="15" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="1"/>
       <file name="Retailer.js" path="/Users/lawaldare/Documents/Decagon files/product-lifecycle/Retailer/Retailer.js">
-        <metrics statements="7" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
-        <line num="3" count="0" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
+        <metrics statements="10" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
         <line num="5" count="0" type="stmt"/>
         <line num="6" count="0" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
       </file>
       <file name="RetailerObserver.js" path="/Users/lawaldare/Documents/Decagon files/product-lifecycle/Retailer/RetailerObserver.js">
         <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>

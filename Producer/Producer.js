@@ -1,14 +1,15 @@
 const fs = require('fs');
+const stopper = require('../check');
 
 class Producer {
-	constructor(product, mainProduct, link) {
-		this.product = product;
+	constructor(state, mainProduct, link) {
+		this.state = state;
 		this.mainProduct = mainProduct;
 		const statement = `${this.mainProduct} has been given to Retailer\n`;
 		this.go =  async function() {
 			await fs.appendFileSync('./output.txt', statement);
 			console.log(statement);
-			this.product.change(new file.Retailer(this.product, this.mainProduct));
+			if(stopper == null) this.state.change(new file.Retailer(this.state, this.mainProduct));
 		};
 	}
 }

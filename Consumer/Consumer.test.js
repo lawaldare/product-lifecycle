@@ -5,6 +5,6 @@ const Consumer = require('./Consumer');
 const Kazeem = new Consumer('Fanta');
 
 
-test('dare is stupid', () => {
+test('creating an instance of a consumer', () => {
   expect(Kazeem).toBeInstanceOf(Consumer);
 })
