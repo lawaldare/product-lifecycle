@@ -1,4 +1,5 @@
 const fs = require('fs');
+const stopper = require('../check');
 
 class Producer {
 	constructor(state, mainProduct, link) {
@@ -8,7 +9,7 @@ class Producer {
 		this.go =  async function() {
 			await fs.appendFileSync('./output.txt', statement);
 			console.log(statement);
-			this.state.change(new file.Retailer(this.state, this.mainProduct));
+			if(stopper == null) this.state.change(new file.Retailer(this.state, this.mainProduct));
 		};
 	}
 }

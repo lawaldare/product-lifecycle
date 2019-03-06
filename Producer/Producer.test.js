@@ -2,7 +2,6 @@
 const Producer = require('./Producer');
 
 
-
 const producer1 = new Producer('producer', 'Fanta');
 
 
