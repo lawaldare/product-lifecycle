@@ -1,12 +1,18 @@
-var Producer = function (product) {
-  this.product = product;
+const fs = require('fs');
 
-  this.go = function () {
-      log.add("Producer has given the Retailer the product");
-      product.change(new Retailer(product));
-  }
-};
+class Producer {
+	constructor(product, mainProduct, link) {
+		this.product = product;
+		this.mainProduct = mainProduct;
+		const statement = `${this.mainProduct} has been given to Retailer\n`;
+		this.go =  async function() {
+			await fs.appendFileSync('./output.txt', statement);
+			console.log(statement);
+			this.product.change(new file.Retailer(this.product, this.mainProduct));
+		};
+	}
+}
 
-
+const file = require('../files');
 
 module.exports = Producer;

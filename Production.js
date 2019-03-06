@@ -1,12 +1,15 @@
-var Production = function () {
-  var currentState = new Producer(this);
+const Producer = require('./Producer/Producer');
+var Production = function() {
+	this.currentState = new Producer(this);
 
-  this.change = function (state) {
-      currentState = state;
-      currentState.go();
-  };
+	this.change = async function(state) {
+		this.currentState = state;
+		await this.currentState.go();
+	};
 
-  this.start = function () {
-      currentState.go();
-  };
-}
+	this.start = function() {
+		this.currentState.go();
+	};
+};
+
+module.exports = Production;

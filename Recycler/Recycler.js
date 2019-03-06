@@ -1,13 +1,18 @@
-var Recycler = function (product) {
-  this.product = product;
+const fs = require('fs');
 
-  this.go = function () {
-      log.add("Recycler has recycled the product for the Producer");
-      product.change(new Producer(product));
-  }
-};
+class Recycler {
+	constructor(product, mainProduct, link) {
+		this.product = product;
+		this.mainProduct = mainProduct;
+		const statement = `${this.mainProduct} has been given to Producer\n`
+		this.go = async  function() {
+			await fs.appendFileSync('./output.txt', statement);
+			console.log(statement);
+			this.product.change(new file.Producer(this.product, this.mainProduct));
+		};
+	}
+}
 
+const file = require('../files');
 
-
-
-module.export = Recycler;
+module.exports = Recycler;
