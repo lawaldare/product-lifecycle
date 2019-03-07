@@ -1,5 +1,5 @@
 const file = require('../Handlers/files');
-const mo = new file.Model();
+const mo = new file.Model(); //an instance of the observer contructor
 
 const producerObserver1 = new file.ProducerObserver();
 const retailerObserver1 = new file.RetailerObserver();
@@ -11,7 +11,7 @@ mo.registerObserver('Retailer', retailerObserver1);
 mo.registerObserver('Consumer', consumerObserver1);
 mo.registerObserver('Recycler', recyclerObserver1);
 
- function started(product, event) {
+ function started(product, event) {// notifying function
 	 mo.notifyAll(event, product);
 }
 
