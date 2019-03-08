@@ -11,8 +11,13 @@ test('creating an instance of a Recycler', () => {
 
 test('append to file', () => {
 			let product = 'Television';
-      new files.Recycler(product);
-      let result = `${product} has been given to the Producer\n`;
-      fs.appendFileSync('testFile2', result);
-			expect(fs.readFileSync('testFile2', 'utf8')).toBe(result);
+      
+      let result = `${product} has been given to the Consumer\n`;
+      
+      recycler1.go()
+      
+      fs.appendFileSync('testFile5', result);
+      
+      expect(fs.readFileSync('testFile5', 'utf8')).toBe(result);
+      fs.unlinkSync('testFile5', 'utf8');
 		});

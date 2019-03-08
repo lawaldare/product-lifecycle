@@ -1,4 +1,4 @@
-function Model() { //Observer contructor
+function Model() { //Observer constructor
 	this.observers = {}; //observer object
 	this.registerObserver = function(event, observer) { //adding the observer with its state
 		this.observers[event] = this.observers[event] || [];

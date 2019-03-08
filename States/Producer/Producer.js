@@ -9,7 +9,7 @@ class Producer { //Producer constructor for the Producer state
 		this.go =  async function() { //method that change the state
 			await fs.appendFileSync('output.txt', statement); //appending the statement to a file
 			console.log(statement);
-			if(stopper == null) this.state.change(new file.Retailer(this.state, this.mainProduct)); //change the state and it stops the production after the last product passed the recycler.
+			if(stopper === null) this.state.change(new file.Retailer(this.state, this.mainProduct)); //change the state and it stops the production after the last product passed the recycler.
 		};
 	}
 }
