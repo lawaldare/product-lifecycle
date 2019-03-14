@@ -1,4 +1,5 @@
 const fs = require('fs');
+const stopper = require('../../Handlers/check');
 
 class Recycler { //Recycler constructor for the Retailer state
 	constructor(state, mainProduct, link) {
@@ -8,7 +9,7 @@ class Recycler { //Recycler constructor for the Retailer state
 		this.go = async  function() { //method to change the state
 			await fs.appendFileSync('output.txt', statement); // appending the statement to a file
 			console.log(statement);
-			this.state.change(new file.Producer(this.state, this.mainProduct)); // changing the state
+			if(stopper === null) this.state.change(new file.Producer(this.state, this.mainProduct)); // changing the state
 		};
 	}
 }

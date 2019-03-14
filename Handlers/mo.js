@@ -11,8 +11,8 @@ mo.registerObserver('Retailer', retailerObserver1);
 mo.registerObserver('Consumer', consumerObserver1);
 mo.registerObserver('Recycler', recyclerObserver1);
 
- function started(product, event) {// notifying function
-	 mo.notifyAll(event, product);
+ async function started(product, event) {// notifying function
+	 await mo.notifyAll(event, product);
 }
 
 module.exports = started;
