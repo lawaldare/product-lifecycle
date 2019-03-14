@@ -1,18 +1,18 @@
 const files = require('./files');
 
-const mo = new files.Model();
+const model = new files.ObserverModel();
 
-const producerObserver1 = new file.ProducerObserver();
+const producerObserver = new files.ProducerObserver();
 
-mo.registerObserver('Producer', producerObserver1);
+model.registerObserver('Producer', producerObserver);
 
 test('creating an instance of a Model', () => {
-  expect(mo).toBeInstanceOf(files.Model);
+  expect(model).toBeInstanceOf(files.ObserverModel);
 });
 
 
 test('observer model notifying all the observers', () => {
   // mo.notifyAll('Producer', 'Fanta');
-  expect(mo.notifyAll('Producer', 'Fanta').toBe())
+  expect(model.notifyAll('Producer', 'Fanta').toBe())
 })
 

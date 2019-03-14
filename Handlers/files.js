@@ -1,11 +1,10 @@
 exports.Production = require('./Production');
 exports.Producer = require('../States/Producer/Producer');
-exports.ProducerObserver = require('../States/Producer/ProducerObserver');
+exports.ProducerObserver = require('../Observers/producerObserver/ProducerObserver');
 exports.Retailer = require('../States/Retailer/Retailer');
-exports.RetailerObserver = require('../States/Retailer/RetailerObserver');
+exports.RetailerObserver = require('../Observers/retailerObserver/RetailerObserver');
 exports.Consumer = require('../States/Consumer/Consumer');
-exports.ConsumerObserver = require('../States/Consumer/ConsumerObserver');
+exports.ConsumerObserver = require('../Observers/consumerObserver/ConsumerObserver');
 exports.Recycler = require('../States/Recycler/Recycler');
-exports.RecyclerObserver = require('../States/Recycler/RecyclerObserver');
-exports.Model = require('./model');
-exports.started = require('./mo');
+exports.RecyclerObserver = require('../Observers/recyclerObserver/RecyclerObserver');
+exports.started = require('./model');

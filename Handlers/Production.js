@@ -1,5 +1,5 @@
 const Producer = require('../States/Producer/Producer');
-var Production = function() {// production object object that determines the transition to the next state and it changes the current state.
+let Production = function() {// production object object that determines the transition to the next state and it changes the current state.
 
 	this.currentState = new Producer(this);
 

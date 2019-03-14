@@ -1,4 +1,6 @@
-function Model() { //Observer constructor
+const file = require('../Handlers/files');
+
+function ObserverModel() { //Observer constructor
 	this.observers = {}; //observer object
 	this.registerObserver = function(event, observer) { //adding the observer with its state
 		this.observers[event] = this.observers[event] || [];
@@ -13,4 +15,22 @@ function Model() { //Observer constructor
 	};
 }
 
-module.exports = Model;
+
+const model = new ObserverModel(); //an instance of the observer constructor
+
+const producerObserver = new file.ProducerObserver();
+const retailerObserver = new file.RetailerObserver();
+const consumerObserver = new file.ConsumerObserver();
+const recyclerObserver = new file.RecyclerObserver();
+
+model.registerObserver('Producer', producerObserver);
+model.registerObserver('Retailer', retailerObserver);
+model.registerObserver('Consumer', consumerObserver);
+model.registerObserver('Recycler', recyclerObserver);
+
+ async function started(product, event) {// notifying function
+	 await model.notifyAll(event, product);
+}
+
+
+module.exports = started;

@@ -1,0 +1,1 @@
+module.exports = { stopper: false }; //an object to initiate the stopper
